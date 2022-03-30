@@ -1,0 +1,29 @@
+header {
+    position: absolute;
+    height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--ultra-light);
+
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+li {
+    color: var(--heading);
+    list-style-type: none;
+}
+
+button {
+    background: var(--accent);
+    color: var(--ultra-light);
+    border-radius: 10px;
+    border: none;
+    padding: 0 24px;
+    height: 56px;
+    text-align: center;
+}
