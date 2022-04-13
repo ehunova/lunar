@@ -1,29 +1,65 @@
-header {
-    position: absolute;
-    height: 80px;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: var(--ultra-light);
+body {
+    font-family: "Inter", sans-serif;
+    letter-spacing: normal;
+    margin: 0;
+}
 
-    font-family: 'Inter', 'sans-serif';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 26px;
+.header-container {
+    display: flex;
+    align-items: center;
+
+    height: 80px;
+    background: var(--ultra-light);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 100px;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
 }
 
 li {
     color: var(--heading);
     list-style-type: none;
+    margin: 0 20px;
 }
 
-button {
-    background: var(--accent);
-    color: var(--ultra-light);
+.button {
     border-radius: 10px;
-    border: none;
-    padding: 0 24px;
-    height: 56px;
     text-align: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
 }
+
+.button-accent {
+    padding: 14px 24px 16px;
+    background: var(--accent);
+    border: none;
+    color: var(--ultra-light);
+}
+
+.header-container .button-accent {
+    width: 130px;
+}
+
+.button-accent:hover {
+    background-color: var(--accent-lighter);
+    cursor: pointer;
+}
+
+/*______________________________________________________*/
+
+
