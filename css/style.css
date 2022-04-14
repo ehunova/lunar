@@ -4,10 +4,11 @@ body {
     margin: 0;
 }
 
+/*_______________________header_______________________________*/
+
 .header-container {
     display: flex;
     align-items: center;
-
     height: 80px;
     background: var(--ultra-light);
 }
@@ -17,6 +18,7 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 12px 100px;
+
 }
 
 .header-navigation {
@@ -38,9 +40,8 @@ li {
 .button {
     border-radius: 10px;
     text-align: center;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
     font-size: 16px;
+    font-weight: 400;
     line-height: 26px;
 }
 
@@ -60,6 +61,72 @@ li {
     cursor: pointer;
 }
 
-/*______________________________________________________*/
+/*_______________________start-page_______________________________*/
 
+.start-page {
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    background: var(--light-background);
+}
 
+.start-page-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 135px 268px 285px;
+    align-items: center;
+    text-align: center;
+}
+
+h4 {
+    margin: 0 0 9px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+}
+
+.start-page-content h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 58px;
+    color: var(--heading);
+}
+
+.start-page-content p {
+    margin: 34px 0 57px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 28px;
+    color: var(--paragraph);
+}
+
+.start-page-buttons button {
+    margin: 0 8px;
+}
+
+.start-page-buttons .button-accent {
+    width: 166px;
+}
+
+.button-base {
+    padding: 14px 24px 16px;
+    background: none;
+    border: solid 1px var(--accent);
+    color: var(--heading);
+}
+
+.button-base:hover {
+    background-color: var(--accent-lighter);
+    color: var(--ultra-light);
+    cursor: pointer;
+}
+
+.start-page-buttons .button-base {
+    width: 166px;
+}
