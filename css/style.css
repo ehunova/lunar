@@ -9,8 +9,11 @@ body {
 .header-container {
     display: flex;
     align-items: center;
-    height: 80px;
+    height: var(--header-height);
     background: var(--ultra-light);
+    position: relative;
+    z-index: 2;
+
 }
 
 .header {
@@ -66,8 +69,22 @@ li {
 .start-page {
     display: flex;
     flex-direction: row;
-    height: 800px;
+    height: calc(100vh - var(--header-height));
     background: var(--light-background);
+}
+
+#start-page-one-circle-image {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+#start-page-six-circle-image {
+    z-index: 1;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
 }
 
 .start-page-content {
@@ -129,4 +146,57 @@ h4 {
 
 .start-page-buttons .button-base {
     width: 166px;
+}
+
+/*_______________________stat-page_______________________________*/
+
+.stat-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: var(--accent);
+    border-radius: 25px;
+    padding: 0 320px;
+}
+
+.stat-page img {
+    z-index: 1;
+    position: absolute;
+    top: -170px;
+}
+
+.stat-page-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 220px;
+    width: 100%;
+    background-color: var(--ultra-light);
+    border-radius: 25px;
+    align-items: center;
+    margin: 60vh 0 0;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-box h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 50px;
+    color: var(--heading);
+    margin: 0;
+}
+
+.stat-box p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--accent);
+    margin: 10px 0 0;
 }
