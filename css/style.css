@@ -200,3 +200,50 @@ h4 {
     color: var(--accent);
     margin: 10px 0 0;
 }
+
+/*_______________________layouts-block_______________________________*/
+
+.layouts-block {
+    display: flex;
+    flex-direction: column;
+    height: 280vh;
+    background-color: var(--light-background);
+    align-items: center;
+    text-align: center;
+}
+
+.layouts-block-content {
+    padding-top: 120px;
+}
+
+.layouts-block-content h1 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    color: var(--heading);
+    margin: 0;
+}
+
+.layouts-pages-block {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    margin: 70px 180px;
+}
+
+.layouts-pages-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--ultra-light);
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 48px;
+    color: var(--heading);
+    padding-top: 10px;
+}
+
+.layouts-pages-box img {
+    border-radius: 10px;
+}
