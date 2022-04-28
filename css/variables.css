@@ -1,4 +1,5 @@
 :root {
+    /*colors*/
     --ultra-light: #fff;
     --heading: #744343;
     --paragraph: #967272;
@@ -7,5 +8,14 @@
     --light-background: #FFF4F4;
     --placeholder: #C4C4C4;
 
+    /*parameter*/
     --header-height: 80px;
+
+    /*image*/
+    --features-child-1: url("/assets/images/child-1.png");
+    --features-child-2: url("/assets/images/child-2.png");
+    --features-child-3: url("/assets/images/child-3.png");
+    --features-child-4: url("/assets/images/child-4.png");
+    --features-child-5: url("/assets/images/child-5.png");
+    --features-child-6: url("/assets/images/child-6.png");
 }

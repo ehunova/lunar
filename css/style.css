@@ -150,7 +150,7 @@ h4 {
 
 /*_______________________stat-page_______________________________*/
 
-.stat-page {
+.stat-block {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,13 +161,13 @@ h4 {
     padding: 0 320px;
 }
 
-.stat-page img {
+.stat-block img {
     z-index: 1;
     position: absolute;
     top: -170px;
 }
 
-.stat-page-content {
+.stat-block-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 220px;
@@ -246,4 +246,82 @@ h4 {
 
 .layouts-pages-box img {
     border-radius: 10px;
+}
+
+/*_______________________features-block_______________________________*/
+
+.features-block {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--ultra-light);
+    align-items: center;
+    text-align: center;
+}
+
+.features-block-content {
+    padding: 120px;
+    margin: 120px 180px;
+}
+
+.features-block-content h1 {
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 58px;
+    color: var(--heading);
+    margin: 0;
+}
+
+.features-block-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin: 40px;
+    text-align: left;
+}
+
+.features-block-card {
+    background: var(--ultra-light) center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(116, 67, 67, 0.1);
+    margin: 20px;
+    padding: 20px 40px;
+
+}
+
+.features-block-card h2{
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 28px;
+    color: var(--heading)
+}
+
+.features-block-card p{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    color: var(--paragraph);
+}
+
+.features-block-card:nth-child(1){
+    background-image: var(--features-child-1);
+}
+
+.features-block-card:nth-child(2){
+    background-image: var(--features-child-2);
+}
+
+.features-block-card:nth-child(3){
+    background-image: var(--features-child-3);
+}
+
+.features-block-card:nth-child(4){
+    background-image: var(--features-child-4);
+}
+
+.features-block-card:nth-child(5){
+    background-image: var(--features-child-5);
+}
+
+.features-block-card:nth-child(6){
+    background-image: var(--features-child-6);
 }
