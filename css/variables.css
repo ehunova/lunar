@@ -12,6 +12,9 @@
     --header-height: 80px;
 
     /*image*/
+    --background-layer-long: url("/assets/images/background-layer-long.png");
+    --background-layer-short: url("/assets/images/background-layer-short.png");
+
     --features-child-1: url("/assets/images/child-1.png");
     --features-child-2: url("/assets/images/child-2.png");
     --features-child-3: url("/assets/images/child-3.png");

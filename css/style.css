@@ -69,7 +69,7 @@ li {
 .start-page {
     display: flex;
     flex-direction: row;
-    height: calc(100vh - var(--header-height));
+    min-height: calc(100vh - var(--header-height));
     background: var(--light-background);
 }
 
@@ -154,7 +154,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background-color: var(--accent);
     border-radius: 25px;
@@ -208,6 +208,10 @@ h4 {
     flex-direction: column;
     height: 280vh;
     background-color: var(--light-background);
+    background-image: var(--background-layer-long);
+    background-size: 100vw 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
     align-items: center;
     text-align: center;
 }
@@ -236,6 +240,7 @@ h4 {
     justify-content: space-between;
     background-color: var(--ultra-light);
     border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(116, 67, 67, 0.1);
     margin: 20px;
     font-size: 20px;
     font-weight: normal;
@@ -253,7 +258,7 @@ h4 {
 .features-block {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--ultra-light);
     align-items: center;
     text-align: center;
@@ -261,7 +266,6 @@ h4 {
 
 .features-block-content {
     padding: 120px;
-    margin: 120px 180px;
 }
 
 .features-block-content h1 {
@@ -281,11 +285,12 @@ h4 {
 
 .features-block-card {
     background: var(--ultra-light) center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(116, 67, 67, 0.1);
     margin: 20px;
     padding: 20px 40px;
-
 }
 
 .features-block-card h2{
@@ -325,3 +330,57 @@ h4 {
 .features-block-card:nth-child(6){
     background-image: var(--features-child-6);
 }
+
+/*_______________________navigation-block_______________________________*/
+
+.navigation-block {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--light-background);
+    background-image: var(--background-layer-short);
+    background-size: 100vw 100%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    align-items: center;
+    text-align: center;
+}
+
+.navigation-block-content {
+    padding: 180px 140px;
+    width: 100%;
+}
+
+.navigation-block-many-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    align-items: center;
+    text-align: center;
+}
+
+.navigation-block-card {
+    background-color: var(--ultra-light);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+}
+
+.navigation-block-card a {
+    display: block;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--heading);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.navigation-block-card a:hover {
+    color: var(--paragraph);
+    cursor: pointer;
+}
+
+.navigation-block-two-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*_______________________form-block_______________________________*/
