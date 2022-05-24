@@ -384,3 +384,90 @@ h4 {
 }
 
 /*_______________________form-block_______________________________*/
+
+.form-block {
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+    background-color: var(--ultra-light);
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#form-block-one-circle-image {
+    z-index: 0;
+    position: absolute;
+    left: 360px;
+    bottom: 155px;
+}
+
+#form-block-six-circle-image {
+    z-index: 0;
+    position: absolute;
+    width: 183px;
+    height: 183px;
+    right: 300px;
+    bottom: 21px;
+}
+
+.form-block-content {
+    z-index: 1;
+    padding: 20px 420px 40px;
+    width: 35%;
+}
+
+.form-block-content h1 {
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 58px;
+    color: var(--heading);
+    margin:0 0 127px;
+}
+
+.form-block-mail-form {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+}
+
+.form-block-mail-form input {
+    background-color: var(--ultra-light);
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    width: 100%;
+    padding: 17px 0;
+    margin: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    color: var(--placeholder);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    text-indent: 25px;
+}
+
+.form-block-mail-form button {
+    padding: 17px 0;
+    width: 100%;
+    margin: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    color: var(--ultra-light);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form-block-content p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: var(--heading);
+}
+
+.form-block-content p a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
