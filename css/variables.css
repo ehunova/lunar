@@ -7,6 +7,8 @@
     --accent-lighter: rgba(221, 121, 121, 0.89);
     --light-background: #FFF4F4;
     --placeholder: #C4C4C4;
+    --footer-inform-links: #FFBABA;
+    --hr-solid: #995858;
 
     /*parameter*/
     --header-height: 80px;
@@ -14,6 +16,7 @@
     /*image*/
     --background-layer-long: url("/assets/images/background-layer-long.png");
     --background-layer-short: url("/assets/images/background-layer-short.png");
+    --background-footer: url("/assets/images/background-footer.png");
 
     --features-child-1: url("/assets/images/child-1.png");
     --features-child-2: url("/assets/images/child-2.png");

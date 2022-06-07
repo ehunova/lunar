@@ -40,6 +40,11 @@ li {
     margin: 0 20px;
 }
 
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .button {
     border-radius: 10px;
     text-align: center;
@@ -206,7 +211,7 @@ h4 {
 .layouts-block {
     display: flex;
     flex-direction: column;
-    height: 280vh;
+    min-height: 280vh;
     background-color: var(--light-background);
     background-image: var(--background-layer-long);
     background-size: 100vw 100%;
@@ -437,6 +442,7 @@ h4 {
     width: 100%;
     padding: 17px 0;
     margin: 10px;
+    /**/
     font-size: 12px;
     font-weight: bold;
     line-height: 22px;
@@ -470,4 +476,200 @@ h4 {
 .form-block-content p a:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+
+/*_______________________footer_______________________________*/
+
+.footer-block {
+    display: flex;
+    justify-content: center;
+    min-height: 55vh;
+    align-items: center;
+    text-align: center;
+    /**/
+    background-image: var(--background-footer);
+    background-size: 100vw 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /**/
+    padding: 72px 135px 20px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*________footer-up________*/
+
+.upper-footer-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#twitter {
+ margin: 0 18px 0 36px;
+}
+
+#instagram {
+    margin: 0 36px 0 18px;
+}
+
+hr {
+    border: 1px solid var(--hr-solid);
+    margin: 52px 0 30px;
+}
+
+/*________footer-middle________*/
+
+.middle-footer-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.middle-footer-block-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.middle-footer-block-left h1 {
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 48px;
+    color: var(--ultra-light);
+    margin: 0;
+}
+
+a[href^="mailto:"] {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--footer-inform-links);
+    padding: 20px 0 40px;
+    text-decoration: none;
+}
+
+a[href^="mailto:"]:hover {
+    text-decoration: underline;
+    color: var(--ultra-light);
+}
+
+.middle-footer-block-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-links-middle-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    padding-bottom: 15px;
+    margin-right: 150px;
+    /**/
+    color: var(--ultra-light);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.left-links-middle-footer a {
+    padding: 15px 0 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.left-links-middle-footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.right-links-middle-footer {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    text-align: left;
+    padding-bottom: 15px;
+    /**/
+    color: var(--ultra-light);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.image-links-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+}
+
+.image-links-footer a {
+    padding: 0 0 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.image-links-footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*________footer-bottom________*/
+
+.bottom-footer-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-links-bottom-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    /**/
+    color: var(--ultra-light);
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.left-links-bottom-footer a {
+    color: var(--footer-inform-links);
+    padding-left: 15px;
+}
+
+.left-links-bottom-footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.right-links-bottom-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: right;
+    /**/
+    color: var(--footer-inform-links);
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.right-links-bottom-footer p {
+    padding: 0 10px;
+}
+
+.right-links-bottom-footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--ultra-light);
 }
